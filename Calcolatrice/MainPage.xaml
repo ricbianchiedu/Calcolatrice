@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="Calcolatrice.MainPage">
+
+    <Grid BackgroundColor="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        
+        <Label
+            x:Name="lblDisplay"
+            Grid.Column="0"
+            Grid.ColumnSpan="4"
+            Grid.Row="0"
+            Text="0" FontSize="50" TextColor="White"
+            HorizontalTextAlignment="End"
+            VerticalTextAlignment="Center"
+            BackgroundColor="#000000"
+            HeightRequest="80"
+            VerticalOptions="Center"
+            Visual="Default" Scale="1" MaxLines="-1"
+            />
+        <!--Key row #1-->
+        <Button x:Name="btnAC" Grid.Column="0" Grid.Row="1"
+                Margin="2" BackgroundColor="DarkGray"
+                Text="AC" TextColor="White" FontSize="Large"
+                Clicked="btnAC_Clicked"
+                />
+        <Button x:Name="btnC" Grid.Column="1" Grid.Row="1"
+                Margin="2" BackgroundColor="DarkGray"
+                Text="C" TextColor="White" FontSize="Large"
+                Clicked="btnC_Clicked"
+                />
+        <Button x:Name="btnSign" Grid.Column="2" Grid.Row="1"
+                Margin="2" BackgroundColor="DarkGray"
+                Text="+/-" TextColor="White" FontSize="Large"
+                Clicked="btnSign_clicked"
+                />
+        <Button x:Name="btnDiv" Grid.Column="3" Grid.Row="1"
+                Margin="2" BackgroundColor="Orange"
+                Text="/" TextColor="White" FontSize="Large"
+                Clicked="btnOperator_Click"
+                />
+
+        <!--Key row #2-->
+        <Button x:Name="btnSeven" Grid.Column="0" Grid.Row="2"
+                Margin="2" BackgroundColor="Gray"
+                Text="7" TextColor="White" FontSize="Large"
+                Clicked="btn_Click"
+                />
+        <Button x:Name="btnEight" Grid.Column="1" Grid.Row="2"
+                Margin="2" BackgroundColor="Gray"
+                Text="8" TextColor="White" FontSize="Large"
+                Clicked="btn_Click"
+                />
+        <Button x:Name="btnNine" Grid.Column="2" Grid.Row="2"
+                Margin="2" BackgroundColor="Gray"
+                Text="9" TextColor="White" FontSize="Large"
+                Clicked="btn_Click"
+                />
+        <Button x:Name="btnMul" Grid.Column="3" Grid.Row="2"
+                Margin="2" BackgroundColor="Orange"
+                Text="x" TextColor="White" FontSize="Large"
+                Clicked="btnOperator_Click"
+                />
+
+        <!--Key row #3-->
+        <Button x:Name="btnFour" Grid.Column="0" Grid.Row="3"
+                Margin="2" BackgroundColor="Gray"
+                Text="4" TextColor="White" FontSize="Large"
+                Clicked="btn_Click"
+                />
+        <Button x:Name="btnFive" Grid.Column="1" Grid.Row="3"
+                Margin="2" BackgroundColor="Gray"
+                Text="5" TextColor="White" FontSize="Large"
+                Clicked="btn_Click"
+                />
+        <Button x:Name="btnSix" Grid.Column="2" Grid.Row="3"
+                Margin="2" BackgroundColor="Gray"
+                Text="6" TextColor="White" FontSize="Large"
+                Clicked="btn_Click"
+                />
+        <Button x:Name="btnSub" Grid.Column="3" Grid.Row="3"
+                Margin="2" BackgroundColor="Orange"
+                Text="-" TextColor="White" FontSize="Large"
+                Clicked="btnOperator_Click"
+                />
+
+        <!--Key row #4-->
+        <Button x:Name="btnOne" Grid.Column="0" Grid.Row="4"
+                Margin="2" BackgroundColor="Gray"
+                Text="1" TextColor="White" FontSize="Large"
+                Clicked="btn_Click"
+                />
+        <Button x:Name="btnTwo" Grid.Column="1" Grid.Row="4"
+                Margin="2" BackgroundColor="Gray"
+                Text="2" TextColor="White" FontSize="Large"
+                Clicked="btn_Click"
+                />
+        <Button x:Name="btnThree" Grid.Column="2" Grid.Row="4"
+                Margin="2" BackgroundColor="Gray"
+                Text="3" TextColor="White" FontSize="Large"
+                Clicked="btn_Click"
+                />
+        <Button x:Name="btnAdd" Grid.Column="3" Grid.Row="4"
+                Margin="2" BackgroundColor="Orange"
+                Text="+" TextColor="White" FontSize="Large"
+                Clicked="btnOperator_Click"
+                />
+
+        <!--Key row #5-->
+        <Button x:Name="btnPi" Grid.Column="0" Grid.Row="5"
+                Margin="2" BackgroundColor="Gray"
+                Text="Pi" TextColor="White" FontSize="Large"
+                Clicked="btnPi_Clicked"
+                />
+        <Button x:Name="btnZero" Grid.Column="1" Grid.Row="5"
+                Margin="2" BackgroundColor="Gray"
+                Text="0" TextColor="White" FontSize="Large"
+                Clicked="btn_Click"
+                />
+        <Button x:Name="btnDot" Grid.Column="2" Grid.Row="5"
+                Margin="2" BackgroundColor="Gray"
+                Text="." TextColor="White" FontSize="Large"
+                Clicked="btn_Click"
+                />
+        <Button x:Name="btnEqu" Grid.Column="3" Grid.Row="5"
+                Margin="2" BackgroundColor="Orange"
+                Text="=" TextColor="White" FontSize="Large"
+                Clicked="btnOperator_Click"
+                />
+
+    </Grid>
+    
+</ContentPage>
