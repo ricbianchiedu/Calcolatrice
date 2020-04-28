@@ -25,7 +25,8 @@ namespace Calcolatrice
         */
         public MainPage()
         {
-            InitializeComponent();
+            	//Commento: voglio vedere se te ne accorgi...
+		InitializeComponent();
         }
 
         private void btn_Click(System.Object sender, System.EventArgs e)
